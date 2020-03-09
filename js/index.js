@@ -47,7 +47,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const navA = document.querySelectorAll("a");
+const navA = document.querySelector('nav').querySelectorAll("a");
 navA.forEach((element, index) => {
   element.textContent = siteContent.nav[`nav-item-${index + 1}`];
   element.style.color = "green";
